@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Pacientes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../assets/styles/estilosHome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg azulSura navbar-dark fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand">GESTORAPP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../../index.html">Principal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./gestionmedicos.html">Medicos</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="./pacientes.html">Pacientes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <br><br><br>
+      <main>
+        <div class="container">
+          <div class="banner">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../../assets/img/paciente4.jpg" class="d-block w-100" alt="paciente4">
+                </div>
+                <div class="carousel-item">
+                  <img src="../../assets/img/paciente1.jpg" class="d-block w-100" alt="paciente1">
+                </div>
+                <div class="carousel-item">
+                  <img src="../../assets/img/paciente2.jpg" class="d-block w-100" alt="paciente2">
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="row">
+                <div class="col col-md-6">
+                    <img src="../../assets/img/pacienteg1.jpg" class="w-100 img-fluid" alt="">
+                </div>
+                <div class="col col-md-6 align-self-center">
+                   <button type="button" class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#collapseExample">Registro Pacientes
+                   </button>
+                   <div class="collapse mt-5" id="collapseExample">
+                    <div class="card card-body">
+
+                      <form>
+                        <h2>Registro Pacientes</h2>
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-square"></i></span>
+                              <input type="text" class="form-control" placeholder="Nombres Completos" id="nombres">
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1"><i class="bi bi-postcard-fill"></i></span>
+                              <input type="text" class="form-control" placeholder="Numero Identificación" id="identificacion" >
+                            </div>
+                          </div>
+                        </div>
+                       <div class="row">
+                        <div class="col-12">
+                          <select class="form-select" id="regimen" >
+                            <option selected>Regimen</option>
+                            <option value="1">Contributivo</option>
+                            <option value="2">Subsidiado</option>
+                          </select>
+                        </div>
+                       </div>
+                       <div class="row mt-3">
+                        <div class="col-12 col-md-6">
+                          <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-circle"></i></span>
+                            <input type="text" class="form-control" placeholder="Email" id="correo">
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-telephone-fill"></i></span>
+                            <input type="text" class="form-control" placeholder="Telefono" id="telefono">
+                          </div>
+                        </div>
+                       </div>
+                       <div class="row mt-3">
+                        <div class="col-12 col-md-12">
+                          <select class="form-select" id="grupoingresos" >
+                            <option selected>Grupo Ingreso</option>
+                            <option value="1">A</option>
+                            <option value="2">B</option>
+                            <option value="3">C</option>
+                          </select>
+                        </div>
+                       </div>
+                       <div class="row mt-3">
+                        <div class="col-12 col-md-6">
+                         
+                        </div>
+                        <div class="col-12 col-md-12">
+                          <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-currency-dollar"></i></span>
+                            <input type="text" class="form-control" placeholder="Cuota Moderadora" id="cuotamoderadora" >
+                          </div>
+                        </div>
+                       </div>
+                       <button id="botonregistrar" type="submit" class="btn btn-success w-100 mt-4">Registrar</button>
+                      </form>
+                    </div>
+                  </div> 
+                </div>
+            </div>
+        </div>
+      </main>
+      <footer>
+        <div class="container-fluid azulSura2">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-4">
+              <img src="../../assets/img/tigre.png" alt="tigre"
+              class="img-fluid w-100">
+          
+            </div>
+            <div class="col-12 col-md-4 text-white text-center align-self-center" >
+              <h2>Programo Luis Alfonso Montes Arias</h2>
+              <P>luisalfonso7009@gmail.com</P>
+              <div class="wow animate__animated animate__fadeInUp animate__slow">
+
+                <i class="bi bi-heart-pulse-fill fs-1 me-3"></i>
+
+              <i class="bi bi-people-fill fs-1 me-3"></i>
+
+              <i class="bi bi-person-video2 fs-1 me-3"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="../helpers/wow.min.js"></script>
+  <script src="../controllers/controladorpacientes.js" type="module"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+</html>
